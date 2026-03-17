@@ -4,9 +4,9 @@
 Parses MIME multipart/related emails, extracts the HTML body, and replaces
 all cid: references with inline base64 data URIs.
 
-Usage: mbox2html.py [options] [message.eml]
-       mbox2html.py -b firefox < message.eml
-       mbox2html.py -o out.html message.mbox
+Usage: mbox2html [options] [message.eml]
+       mbox2html -b xdg-open < message.eml
+       mbox2html -o out.html message.mbox
 """
 
 import argparse
